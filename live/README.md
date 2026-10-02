@@ -25,6 +25,10 @@ Lead follow-up, AI booking and **calendar-fill campaigns** for home-service comp
 | Ringless voicemail / Sendblue (iMessage) | tag-triggered GHL workflows (`adapters/ghl.py`) |
 | Compliance: consent, STOP/START/HELP, quiet hours, weekly cap, DND | `compliance.py` |
 
+## Going live
+
+Step-by-step: [docs/implementation-guide.md](docs/implementation-guide.md).
+
 ## Quick start
 
     pip install -e ".[dev]"
@@ -53,7 +57,7 @@ Lead follow-up, AI booking and **calendar-fill campaigns** for home-service comp
       api.py security.py scheduler.py container.py demo.py
     tests/        139 tests: unit, contract (mocked HTTP), API, end-to-end demo
     scripts/      fieldpulse_probe.py · ghl_probe.py · sign_webhook.py
-    docs/         architecture · runbook · security-compliance · demo-script · adr/
+    docs/         implementation-guide · architecture · runbook · security-compliance · demo-script · adr/
 
 ## Status: read before go-live
 
