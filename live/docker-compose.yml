@@ -1,0 +1,15 @@
+services:
+  engine:
+    build: .
+    image: hvac-growth-engine:1.0.0
+    env_file: .env
+    ports: ["8000:8000"]
+    volumes: ["engine-data:/data"]
+    restart: unless-stopped
+    read_only: true
+    tmpfs: ["/tmp"]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+
+volumes:
+  engine-data:
